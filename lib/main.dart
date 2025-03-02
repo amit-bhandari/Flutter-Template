@@ -1,3 +1,4 @@
+import 'package:expense_manager/plugins/hello_pigeon/hello_pigeon.g.dart';
 import 'package:expense_manager/routing/router.dart';
 import 'package:expense_manager/ui/core/localization/app_localization.dart';
 import 'package:expense_manager/ui/core/themes/theme.dart';
@@ -15,6 +16,10 @@ class MainApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+    final hello = HelloPigeon();
+    hello.sayHello().then((value) {
+      debugPrint('Captain ${value.hello} ${value.world}');
+    });
     return MaterialApp.router(
       localizationsDelegates: [AppLocalizationDelegate()],
       scrollBehavior: AppCustomScrollBehavior(),
