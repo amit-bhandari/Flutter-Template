@@ -21,7 +21,7 @@ class HelloScreen extends ConsumerWidget {
                   if (snapshot.hasData) {
                     return Text(snapshot.data!.title);
                   } else {
-                    return CircularProgressIndicator();
+                    return Text('Tap to get get next UUID');
                   }
                 }),
             onTap: () => data.fetchAlbum(),
