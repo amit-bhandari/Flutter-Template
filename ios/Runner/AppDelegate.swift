@@ -9,8 +9,7 @@ import UIKit
   ) -> Bool {
     GeneratedPluginRegistrant.register(with: self)
 
-    let rootViewController : FlutterViewController = window?.rootViewController as! FlutterViewController
-    let binaryMessenger = rootViewController as! FlutterBinaryMessenger
+    let binaryMessenger : FlutterBinaryMessenger = window?.rootViewController as! FlutterBinaryMessenger
     HelloPigeonSetup.setUp(binaryMessenger: binaryMessenger, api: HelloPigeonImpl())
     
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
