@@ -1,11 +1,11 @@
 package com.example.expense_manager
 
-import HelloPigeon
 import com.example.expense_manager.plugins.hello_pigeon.HelloPigeonImpl
-import com.example.expense_manager.plugins.hello_pigeon.HelloPigeonImpl1
-import com.example.expense_manager.plugins.hello_pigeon.HelloPigeonImpl2
+import com.example.expense_manager.plugins.hello_pigeon_1.HelloPigeonImpl1
+import com.example.expense_manager.plugins.hello_pigeon_2.HelloPigeonImpl2
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
+import HelloPigeon
 import HelloPigeon1
 import HelloPigeon2
 

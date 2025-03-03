@@ -1,4 +1,4 @@
-package com.example.expense_manager.plugins.hello_pigeon
+package com.example.expense_manager.plugins.hello_pigeon_1
 
 import Hello1
 import HelloPigeon1
