@@ -2,6 +2,7 @@
 
 original_pigeon_file="pigeons/hello_pigeon_1.dart"
 original_kotlin_file="android/app/src/main/kotlin/com/example/expense_manager/plugins/hello_pigeon_1/HelloPigeon_1.kt"
+main_activity_file="android/app/src/main/kotlin/com/example/expense_manager/MainActivity.kt"
 
 for ((index=4; index<5; index++)); do
     duplicate_pigeon_file="pigeons/hello_pigeon_$index.dart"
@@ -26,4 +27,21 @@ for ((index=4; index<5; index++)); do
     awk -v i="$index" '{ gsub("class HelloPigeonImpl1: HelloPigeon1 {", "class HelloPigeonImpl" i ": HelloPigeon" i " {"); print }' "$duplicate_kotlin_file" > temp_file && mv temp_file "$duplicate_kotlin_file"
     awk -v i="$index" '{ gsub(" Hello1", " Hello" i ""); print }' "$duplicate_kotlin_file" > temp_file && mv temp_file "$duplicate_kotlin_file"
     awk -v i="$index" '{ gsub("return Hello1", "return Hello" i ""); print }' "$duplicate_kotlin_file" > temp_file && mv temp_file "$duplicate_kotlin_file"
+
+    awk -v line_number=3 -v i="$index" '
+NR == line_number { print "import com.example.expense_manager.plugins.hello_pigeon_" i ".HelloPigeonImpl" i "" }
+{ print }
+' $main_activity_file > temp_file && mv temp_file $main_activity_file
+
+    awk -v line_number=4 -v i="$index" '
+NR == line_number { print "import HelloPigeon" i "" }
+{ print }
+' $main_activity_file > temp_file && mv temp_file $main_activity_file
+
+    line_number=$(awk '/HelloPigeon\.setUp/ {print NR; exit}' $main_activity_file) 
+
+    awk -v line_number=$line_number -v i="$index" '
+NR == line_number { print "HelloPigeon" i ".setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl" i "())" }
+{ print }
+' $main_activity_file > temp_file && mv temp_file $main_activity_file
 done

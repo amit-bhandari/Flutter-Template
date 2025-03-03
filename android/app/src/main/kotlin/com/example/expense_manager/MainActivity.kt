@@ -13,13 +13,13 @@ import HelloPigeon2
 import HelloPigeon3
 import HelloPigeon4
 
-class MainActivity: FlutterActivity() {
+class MainActivity : FlutterActivity() {
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
-        /* HelloPigeon.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl())
+        HelloPigeon.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl())
         HelloPigeon1.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl1())
         HelloPigeon2.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl2())
         HelloPigeon3.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl3())
-        HelloPigeon4.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl4()) */
+        HelloPigeon4.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl4())
     }
 }
