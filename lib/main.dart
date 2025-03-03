@@ -18,7 +18,7 @@ class MainApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final hello = HelloPigeon();
+    /* final hello = HelloPigeon();
     hello.sayHello().then((value) {
       debugPrint('Captain ${value.hello} ${value.world}');
     });
@@ -31,7 +31,7 @@ class MainApp extends ConsumerWidget {
     final hello2 = HelloPigeon2();
     hello2.sayHello().then((value) {
       debugPrint('Captain ${value.hello} ${value.world}');
-    });
+    }); */
 
     return MaterialApp.router(
       localizationsDelegates: [AppLocalizationDelegate()],
