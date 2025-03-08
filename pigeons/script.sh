@@ -4,7 +4,7 @@ original_pigeon_file="pigeons/hello_pigeon_1.dart"
 original_kotlin_file="android/app/src/main/kotlin/com/example/expense_manager/plugins/hello_pigeon_1/HelloPigeon_1.kt"
 main_activity_file="android/app/src/main/kotlin/com/example/expense_manager/MainActivity.kt"
 
-for ((index=4; index<5; index++)); do
+for ((index=10; index<11; index++)); do
     duplicate_pigeon_file="pigeons/hello_pigeon_$index.dart"
     duplicate_kotlin_file="android/app/src/main/kotlin/com/example/expense_manager/plugins/hello_pigeon_$index/HelloPigeon_$index.kt"
 
@@ -25,7 +25,7 @@ for ((index=4; index<5; index++)); do
     awk -v i="$index" '{ gsub("import Hello1", "import Hello" i ""); print }' "$duplicate_kotlin_file" > temp_file && mv temp_file "$duplicate_kotlin_file"
     awk -v i="$index" '{ gsub("import HelloPigeon1", "import HelloPigeon" i ""); print }' "$duplicate_kotlin_file" > temp_file && mv temp_file "$duplicate_kotlin_file"
     awk -v i="$index" '{ gsub("class HelloPigeonImpl1: HelloPigeon1 {", "class HelloPigeonImpl" i ": HelloPigeon" i " {"); print }' "$duplicate_kotlin_file" > temp_file && mv temp_file "$duplicate_kotlin_file"
-    awk -v i="$index" '{ gsub(" Hello1", " Hello" i ""); print }' "$duplicate_kotlin_file" > temp_file && mv temp_file "$duplicate_kotlin_file"
+    awk -v i="$index" '{ gsub(": Hello1", ": Hello" i ""); print }' "$duplicate_kotlin_file" > temp_file && mv temp_file "$duplicate_kotlin_file"
     awk -v i="$index" '{ gsub("return Hello1", "return Hello" i ""); print }' "$duplicate_kotlin_file" > temp_file && mv temp_file "$duplicate_kotlin_file"
 
     awk -v line_number=3 -v i="$index" '
