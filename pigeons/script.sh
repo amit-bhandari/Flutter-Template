@@ -4,7 +4,7 @@ original_pigeon_file="pigeons/hello_pigeon_1.dart"
 original_kotlin_file="android/app/src/main/kotlin/com/example/expense_manager/plugins/hello_pigeon_1/HelloPigeon_1.kt"
 main_activity_file="android/app/src/main/kotlin/com/example/expense_manager/MainActivity.kt"
 
-for ((index=10; index<11; index++)); do
+for ((index=2; index<3; index++)); do
     duplicate_pigeon_file="pigeons/hello_pigeon_$index.dart"
     duplicate_kotlin_file="android/app/src/main/kotlin/com/example/expense_manager/plugins/hello_pigeon_$index/HelloPigeon_$index.kt"
 
@@ -38,7 +38,7 @@ NR == line_number { print "import HelloPigeon" i "" }
 { print }
 ' $main_activity_file > temp_file && mv temp_file $main_activity_file
 
-    line_number=$(awk '/HelloPigeon\.setUp/ {print NR; exit}' $main_activity_file) 
+    line_number=$(awk '/HelloPigeon1\.setUp/ {print NR; exit}' $main_activity_file) 
 
     awk -v line_number=$line_number -v i="$index" '
 NR == line_number { print "HelloPigeon" i ".setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl" i "())" }
