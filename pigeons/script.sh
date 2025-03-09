@@ -4,7 +4,7 @@ original_pigeon_file="pigeons/hello_pigeon_1.dart"
 original_kotlin_file="android/app/src/main/kotlin/com/example/expense_manager/plugins/hello_pigeon_1/HelloPigeon_1.kt"
 main_activity_file="android/app/src/main/kotlin/com/example/expense_manager/MainActivity.kt"
 
-for ((index=2; index<3; index++)); do
+for ((index=2; index<51; index++)); do
     duplicate_pigeon_file="pigeons/hello_pigeon_$index.dart"
     duplicate_kotlin_file="android/app/src/main/kotlin/com/example/expense_manager/plugins/hello_pigeon_$index/HelloPigeon_$index.kt"
 

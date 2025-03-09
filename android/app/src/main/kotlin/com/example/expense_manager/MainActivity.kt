@@ -1,5 +1,103 @@
 package com.example.expense_manager
 
+import com.example.expense_manager.plugins.hello_pigeon_50.HelloPigeonImpl50
+import HelloPigeon50
+import com.example.expense_manager.plugins.hello_pigeon_49.HelloPigeonImpl49
+import HelloPigeon49
+import com.example.expense_manager.plugins.hello_pigeon_48.HelloPigeonImpl48
+import HelloPigeon48
+import com.example.expense_manager.plugins.hello_pigeon_47.HelloPigeonImpl47
+import HelloPigeon47
+import com.example.expense_manager.plugins.hello_pigeon_46.HelloPigeonImpl46
+import HelloPigeon46
+import com.example.expense_manager.plugins.hello_pigeon_45.HelloPigeonImpl45
+import HelloPigeon45
+import com.example.expense_manager.plugins.hello_pigeon_44.HelloPigeonImpl44
+import HelloPigeon44
+import com.example.expense_manager.plugins.hello_pigeon_43.HelloPigeonImpl43
+import HelloPigeon43
+import com.example.expense_manager.plugins.hello_pigeon_42.HelloPigeonImpl42
+import HelloPigeon42
+import com.example.expense_manager.plugins.hello_pigeon_41.HelloPigeonImpl41
+import HelloPigeon41
+import com.example.expense_manager.plugins.hello_pigeon_40.HelloPigeonImpl40
+import HelloPigeon40
+import com.example.expense_manager.plugins.hello_pigeon_39.HelloPigeonImpl39
+import HelloPigeon39
+import com.example.expense_manager.plugins.hello_pigeon_38.HelloPigeonImpl38
+import HelloPigeon38
+import com.example.expense_manager.plugins.hello_pigeon_37.HelloPigeonImpl37
+import HelloPigeon37
+import com.example.expense_manager.plugins.hello_pigeon_36.HelloPigeonImpl36
+import HelloPigeon36
+import com.example.expense_manager.plugins.hello_pigeon_35.HelloPigeonImpl35
+import HelloPigeon35
+import com.example.expense_manager.plugins.hello_pigeon_34.HelloPigeonImpl34
+import HelloPigeon34
+import com.example.expense_manager.plugins.hello_pigeon_33.HelloPigeonImpl33
+import HelloPigeon33
+import com.example.expense_manager.plugins.hello_pigeon_32.HelloPigeonImpl32
+import HelloPigeon32
+import com.example.expense_manager.plugins.hello_pigeon_31.HelloPigeonImpl31
+import HelloPigeon31
+import com.example.expense_manager.plugins.hello_pigeon_30.HelloPigeonImpl30
+import HelloPigeon30
+import com.example.expense_manager.plugins.hello_pigeon_29.HelloPigeonImpl29
+import HelloPigeon29
+import com.example.expense_manager.plugins.hello_pigeon_28.HelloPigeonImpl28
+import HelloPigeon28
+import com.example.expense_manager.plugins.hello_pigeon_27.HelloPigeonImpl27
+import HelloPigeon27
+import com.example.expense_manager.plugins.hello_pigeon_26.HelloPigeonImpl26
+import HelloPigeon26
+import com.example.expense_manager.plugins.hello_pigeon_25.HelloPigeonImpl25
+import HelloPigeon25
+import com.example.expense_manager.plugins.hello_pigeon_24.HelloPigeonImpl24
+import HelloPigeon24
+import com.example.expense_manager.plugins.hello_pigeon_23.HelloPigeonImpl23
+import HelloPigeon23
+import com.example.expense_manager.plugins.hello_pigeon_22.HelloPigeonImpl22
+import HelloPigeon22
+import com.example.expense_manager.plugins.hello_pigeon_21.HelloPigeonImpl21
+import HelloPigeon21
+import com.example.expense_manager.plugins.hello_pigeon_20.HelloPigeonImpl20
+import HelloPigeon20
+import com.example.expense_manager.plugins.hello_pigeon_19.HelloPigeonImpl19
+import HelloPigeon19
+import com.example.expense_manager.plugins.hello_pigeon_18.HelloPigeonImpl18
+import HelloPigeon18
+import com.example.expense_manager.plugins.hello_pigeon_17.HelloPigeonImpl17
+import HelloPigeon17
+import com.example.expense_manager.plugins.hello_pigeon_16.HelloPigeonImpl16
+import HelloPigeon16
+import com.example.expense_manager.plugins.hello_pigeon_15.HelloPigeonImpl15
+import HelloPigeon15
+import com.example.expense_manager.plugins.hello_pigeon_14.HelloPigeonImpl14
+import HelloPigeon14
+import com.example.expense_manager.plugins.hello_pigeon_13.HelloPigeonImpl13
+import HelloPigeon13
+import com.example.expense_manager.plugins.hello_pigeon_12.HelloPigeonImpl12
+import HelloPigeon12
+import com.example.expense_manager.plugins.hello_pigeon_11.HelloPigeonImpl11
+import HelloPigeon11
+import com.example.expense_manager.plugins.hello_pigeon_10.HelloPigeonImpl10
+import HelloPigeon10
+import com.example.expense_manager.plugins.hello_pigeon_9.HelloPigeonImpl9
+import HelloPigeon9
+import com.example.expense_manager.plugins.hello_pigeon_8.HelloPigeonImpl8
+import HelloPigeon8
+import com.example.expense_manager.plugins.hello_pigeon_7.HelloPigeonImpl7
+import HelloPigeon7
+import com.example.expense_manager.plugins.hello_pigeon_6.HelloPigeonImpl6
+import HelloPigeon6
+import com.example.expense_manager.plugins.hello_pigeon_5.HelloPigeonImpl5
+import HelloPigeon5
+import com.example.expense_manager.plugins.hello_pigeon_4.HelloPigeonImpl4
+import HelloPigeon4
+import com.example.expense_manager.plugins.hello_pigeon_3.HelloPigeonImpl3
+import HelloPigeon3
+import com.example.expense_manager.plugins.hello_pigeon_2.HelloPigeonImpl2
+import HelloPigeon2
 import com.example.expense_manager.plugins.hello_pigeon_1.HelloPigeonImpl1
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
@@ -8,6 +106,55 @@ import HelloPigeon1
 class MainActivity : FlutterActivity() {
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
+        HelloPigeon2.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl2())
+        HelloPigeon3.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl3())
+        HelloPigeon4.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl4())
+        HelloPigeon5.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl5())
+        HelloPigeon6.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl6())
+        HelloPigeon7.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl7())
+        HelloPigeon8.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl8())
+        HelloPigeon9.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl9())
+        HelloPigeon10.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl10())
+        HelloPigeon11.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl11())
+        HelloPigeon12.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl12())
+        HelloPigeon13.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl13())
+        HelloPigeon14.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl14())
+        HelloPigeon15.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl15())
+        HelloPigeon16.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl16())
+        HelloPigeon17.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl17())
+        HelloPigeon18.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl18())
+        HelloPigeon19.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl19())
+        HelloPigeon20.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl20())
+        HelloPigeon21.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl21())
+        HelloPigeon22.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl22())
+        HelloPigeon23.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl23())
+        HelloPigeon24.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl24())
+        HelloPigeon25.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl25())
+        HelloPigeon26.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl26())
+        HelloPigeon27.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl27())
+        HelloPigeon28.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl28())
+        HelloPigeon29.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl29())
+        HelloPigeon30.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl30())
+        HelloPigeon31.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl31())
+        HelloPigeon32.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl32())
+        HelloPigeon33.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl33())
+        HelloPigeon34.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl34())
+        HelloPigeon35.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl35())
+        HelloPigeon36.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl36())
+        HelloPigeon37.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl37())
+        HelloPigeon38.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl38())
+        HelloPigeon39.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl39())
+        HelloPigeon40.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl40())
+        HelloPigeon41.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl41())
+        HelloPigeon42.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl42())
+        HelloPigeon43.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl43())
+        HelloPigeon44.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl44())
+        HelloPigeon45.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl45())
+        HelloPigeon46.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl46())
+        HelloPigeon47.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl47())
+        HelloPigeon48.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl48())
+        HelloPigeon49.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl49())
+        HelloPigeon50.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl50())
         HelloPigeon1.setUp(flutterEngine.dartExecutor.binaryMessenger, HelloPigeonImpl1())
     }
 }
