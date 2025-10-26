@@ -10,30 +10,30 @@ dependencies:
   flutter:
     sdk: flutter
   logging: ^1.3.0
-  go_router: ^14.6.2
+  go_router: ^16.3.0
   http: ^1.3.0
   drift: ^2.24.0
   drift_flutter: ^0.2.4
   uuid: ^4.5.1
-  flutter_riverpod: ^2.6.1
-  riverpod_annotation: ^2.6.1
+  flutter_riverpod: ^3.0.3
+  riverpod_annotation: ^3.0.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
   mocktail_image_network: ^1.2.0
   mocktail: ^1.0.4
   integration_test:
     sdk: flutter
   build_runner: ^2.4.14
-  freezed: ^2.5.7
+  freezed: ^3.2.3
   json_serializable: ^6.9.0
   drift_dev: ^2.24.0
-  riverpod_generator: ^2.6.4
-  custom_lint: ^0.7.2
-  riverpod_lint: ^2.6.4
-  pigeon: ^24.2.1
+  riverpod_generator: ^3.0.3
+  custom_lint: ^0.8.0
+  riverpod_lint: ^3.0.3
+  pigeon: ^26.0.2
 
 flutter:
   uses-material-design: true

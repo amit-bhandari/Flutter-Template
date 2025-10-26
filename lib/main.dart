@@ -16,10 +16,6 @@ class MainApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final hello = HelloPigeon();
-    hello.sayHello().then((value) {
-      debugPrint('Captain ${value.hello} ${value.world}');
-    });
     return MaterialApp.router(
       localizationsDelegates: [AppLocalizationDelegate()],
       scrollBehavior: AppCustomScrollBehavior(),
